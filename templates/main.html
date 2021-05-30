@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="kr">
+
+<head>
+ <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>판타지 직업 성향 테스트</title>
+</head>
+<body>
+<form method="post" action="{% url "name" %}" class="post_form">
+    {% csrf_token %}
+    <div>
+        <label>
+        <input name="username" type="text" class="name">
+    </label>
+    </div>
+    <div><input type="submit" class="submit"></div>
+</form>
+</body>
