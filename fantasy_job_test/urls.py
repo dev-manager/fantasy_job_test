@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/<str:page>/', test_page),
     path('', main, name="main"),
-    path('name/', username, name='name')
+    path('name/', username, name='name'),
+    path('test2/', test, name='test')
 ]

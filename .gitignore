@@ -1,4 +1,5 @@
 Pipfile
+*.png
 Pipfile.lock
 .idea
 *.log
